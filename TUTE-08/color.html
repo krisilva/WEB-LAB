@@ -1,0 +1,34 @@
+<html>
+<head>
+<title> hello </title>
+<script>
+
+function x( )
+{
+document.bgColor="red";
+document.fgColor="green";
+
+}
+
+function y( )
+{
+document.bgColor="green";
+document.fgColor="blue";
+}
+
+function z( )
+{
+document.bgColor="blue";
+document.fgColor="green";
+}
+
+</script>
+</head>
+<body>
+<h1> Hello World </h1>
+<input type="button" name ="d1" value="red" onmouseover="x( )" onmouseout="z( )"  >
+<input type="button" name ="d2" value="green"   onmouseover="y( )"  onmouseout="z( )"  >
+<input type="button" name ="d3" value="blue"   onmouseover="z( )"  onmouseout="y( )"  >
+
+</body>
+</html>

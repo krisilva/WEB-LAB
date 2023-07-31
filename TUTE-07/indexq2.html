@@ -1,0 +1,37 @@
+
+<html>
+<head>
+    <title>Grade Calculator</title>
+</head>
+<body>
+    <h1>Grade Calculator</h1>
+    <label>Enter 5 marks:</label><br>
+    <input type="number" id="mark1"><br>
+    <input type="number" id="mark2"><br>
+    <input type="number" id="mark3"><br>
+    <input type="number" id="mark4"><br>
+    <input type="number" id="mark5"><br><br>
+    <button onclick="calculateAndDisplay()">Grade</button>
+
+    <script>
+        function calculateAndDisplay() {
+            let mark1 = parseFloat(document.getElementById("mark1").value);
+            let mark2 = parseFloat(document.getElementById("mark2").value);
+            let mark3 = parseFloat(document.getElementById("mark3").value);
+            let mark4 = parseFloat(document.getElementById("mark4").value);
+            let mark5 = parseFloat(document.getElementById("mark5").value);
+
+            let total = mark1 + mark2 + mark3 + mark4 + mark5;
+            let average = total / 5;
+
+            alert("Total marks: " + total + "\nAverage marks: " + average);
+
+            if (average > 30) {
+                alert("Congrats! You passed.");
+            } else {
+                alert("Better luck next time.");
+            }
+        }
+    </script>
+</body>
+</html>
